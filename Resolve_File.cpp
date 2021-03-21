@@ -44,10 +44,10 @@ void Task_3_Function()
        {
           for(k=0;k<3;k++)
           {
-              massive_of_Task3[i][j][k]=(i+1)*100+(j+1)*10+k+1;
-              std::cout <<" "<<massive_of_Task3[i][j][k];
+              massive_of_Task3[i][j][k]=(i+1)*100+(j+1)*10+k+1;              //initialisation
+              std::cout <<" "<<massive_of_Task3[i][j][k];                   //print out initialized massive member in console
           }
-        std::cout<<"\n";                                                    //strange problem cannot type in QT std::cout<<endl;
+        std::cout<<"\n";                                                    //strange problem cannot type in QT std::cout<<endl; but easyly builded in code blocks adjustments
        }
     std::cout<<"\n";
     }

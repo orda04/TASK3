@@ -1,7 +1,7 @@
 #ifndef RESOLVE_FILE_H
 
 #define RESOLVE_FILE_H
-//#include "main.h"
+
 #include <iostream>
 
  //int a=2;

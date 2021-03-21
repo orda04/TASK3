@@ -32,7 +32,7 @@ extern float result_Func(int a1, int a2, int a3, int a4);
 
 
 
-int main(int argc, char *argv[])
+int main()
 {
 // ************TASK_1&4***************
 
