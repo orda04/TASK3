@@ -16,72 +16,44 @@
 //●DLL Library challenge................
 
 #include <QCoreApplication>
-#include <iostream>
+
+#include "Resolve_File.h"
+#include "main.h"
 using namespace std;
+
+
+extern    int a;
+extern    int b;
+extern    int c;
+extern    int d;
+extern    float res;
+extern float result_Func(int a1, int a2, int a3, int a4);
+//void Task_2_Function();
+
+
 
 int main(int argc, char *argv[])
 {
-// ************TASK_3******************
-// *these variables will be moved at additional file *.cpp and will be used at Task #4
-/*
-    int a=2;
-    int b=5;
-    int c=7;
-    int d=8;
-    float res=0;
-    res= a*(b+( static_cast < float >(c)/d));
-*/
+// ************TASK_1&4***************
+
+cout<<"All functions prototypes are located in Resolve_file.h \nAll functions itself are located in Resolve_file.cpp"<<endl<<endl;
+cout <<endl<< "Task 1_4 fucntion in process... main.cpp line 41"<<endl;
+cout<<"your result is: "<<result_Func(a,b,c,d)<<endl;
+// ************TASK_1&4****************
+
+
 
 //************TASK_2******************
-  int inVariable=0;
-  int result;
-  cout<<"Mr User we need your help, Please Enter your integer value...";
-  cin>>inVariable;
-  result=(inVariable<=21)? (inVariable-21):((inVariable-21)*2);
-  cout<<"Mr User Houston problem solved.. Your result is :"<<result;
+cout <<endl<< "\nTask 2 function  in process...  main.cpp line 47"<<endl;
+Task_2_Function();
+//************TASK_3******************
+cout <<endl<< "\nTask 3 function  in process...  main.cpp line 50"<<endl;
+char z;
+cout<<"\n\when ready just press any key:";
+cin>>z;
+Task_3_Function();
 
- //************TASK_3******************
+cout<<"\n\t\t___END___OF___GAME"<<endl;
 
-int  massive_of_Task3[3][3][3];
-int i,j,k;
-cout<<"\nvisualisation of 3 way massive one of ways will be represented as a pages(layers), all others as a regular 2-way massive ( matrix)\n";
-for (i=0;i<3;i++)
-{
-  cout <<"\t\t\t "<<i<<" Page of 2 way massive\n\n";
-   for(j=0;j<3;j++)
-   {
-      for(k=0;k<3;k++)
-      {
-          massive_of_Task3[i][j][k]=(i+1)*100+(j+1)*10+k+1;
-          cout <<" "<<massive_of_Task3[i][j][k];
-      }
-    cout<<endl;
-   }
-cout<<endl;
-}
-int *pArr=nullptr;
-pArr=&massive_of_Task3[0][0][0];
-//cheking totaly same but with using Addresses access and pointers
-for (i=0;i<3;i++)
-{
-   cout <<"\t\t\t "<<i<<" Page of 2 way massive\n\n";
-   for(j=0;j<3;j++)
-   {
-      for(k=0;k<3;k++)
-      {
-          cout <<" "<<pArr<<" ="<<*(pArr);
-          pArr++;
-      }
-   cout<<endl;
-   }
-cout<<endl;
-}
-cout<<"We have to find element with address [1][1][1] "<<massive_of_Task3[1][1][1]<<endl;
-pArr=&massive_of_Task3[0][0][0];
-
-cout<<endl<<"\n\tADDRESS="<<pArr+1*3*3+1*3+1;
-cout<<endl<<"\n\tInside box="<<*(pArr+1*3*3+1*3+1);
-
-  cout<<"\n\t\t___END___OF___GAME"<<endl;
     return 0;
 }
