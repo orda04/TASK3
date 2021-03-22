@@ -71,13 +71,3 @@ Thumbs.db
 *.dll
 *.exe
 
-
-TASK3.pro
-
-README.md
-
-DLL1/Library/CMakeLists.txt
-
-DLL1/Library/CMakeLists.txt.user
-
-DLL1/Library/library123.cpp
